@@ -7,7 +7,7 @@ public class DataOperation {
     ResultSet rs = null;
 
     String username = "root";
-    String password = "ly003910";
+    String password = "xxxxxxx";
     String url = "jdbc:mysql://localhost:3306/dataaccountdesign?user="
             + username + "&password=" + password ;//+ "&serverTimezone=UTC&useUnicode=true&characterEncoding=gbk";
 
