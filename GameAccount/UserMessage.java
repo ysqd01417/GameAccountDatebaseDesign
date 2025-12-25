@@ -182,10 +182,6 @@ public class UserMessage extends JFrame implements ActionListener {
 
     }
 
-    public static void main(String[] args) {
-        Login L = new Login();
-    }
-
     public void updataProcess(){
         String playerid = jTPlayerid.getText().trim();
         String playername = jTPlayername.getText().trim();

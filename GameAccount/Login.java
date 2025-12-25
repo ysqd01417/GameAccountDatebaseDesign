@@ -153,8 +153,10 @@ public class Login extends JFrame implements ActionListener{
 
             String sql="";
 
-            if(userStr.equals("玩家")||userStr.equals("管理员")){
-                sql = "select * from `user` where " + "`user_id`" + "='" + sID + "'";
+            if(userStr.equals("玩家")){
+                sql = "select * from `user` where " + "`user_id`" + "='" + sID + "'" + "and" + "`user_identity`" + "='" + userStr + "'";
+            } else if (userStr.equals("管理员")) {
+                sql = "select * from `user` where " + "`user_id`" + "='" + sID + "'" + "and" + "`user_identity`" + "='" + userStr + "'";
             } else if (userStr.equals("厂商")){
                 sql = "select * from `manufacturer` where " + "`manufacturer_id`" + "='" + sID + "'";
             }
